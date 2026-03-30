@@ -1,0 +1,33 @@
+/**
+ * Converts a mock engine mid price (finite, non-negative USD per coin) into integer
+ * USD cents per whole coin, using the engine’s 4dp string form so float noise stays bounded.
+ */
+export function usdPerCoinNumberToCents(price: number): bigint | null {
+  if (!Number.isFinite(price) || price < 0) {
+    return null;
+  }
+  const [intStr, fracRaw = ''] = price.toFixed(4).split('.');
+  const frac = (fracRaw + '0000').slice(0, 4);
+  const whole = BigInt(intStr);
+  const micro = whole * 10_000n + BigInt(frac);
+  return (micro * 100n + 5_000n) / 10_000n;
+}
+
+/**
+ * Parses a user-entered USD-per-coin string (e.g. "98500.12") into integer USD cents per whole coin,
+ * matching {@link usdPerCoinNumberToCents} rounding — no floating point.
+ */
+export function parseUsdPerCoinDecimalStringToCents(raw: string): bigint | null {
+  const s = raw.trim();
+  if (s === '') {
+    return null;
+  }
+  if (!/^\d+(\.\d{1,4})?$/.test(s)) {
+    return null;
+  }
+  const [w, f = ''] = s.split('.');
+  const frac = (f + '0000').slice(0, 4);
+  const whole = BigInt(w || '0');
+  const micro = whole * 10_000n + BigInt(frac);
+  return (micro * 100n + 5_000n) / 10_000n;
+}

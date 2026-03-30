@@ -1,0 +1,158 @@
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #232830;
+  background: linear-gradient(180deg, #12151c 0%, #0f1117 100%);
+  min-height: 100vh;
+}
+
+.header {
+  padding: 1rem 1rem 0.5rem;
+  border-bottom: 1px solid #232830;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b929e;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.row {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #1a1e26;
+}
+
+.row:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rowMain {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.symbol {
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.price {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  color: #c4c9d4;
+}
+
+.rowMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.changePos {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: #3dd68c;
+}
+
+.changeNeg {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: #f56565;
+}
+
+.changeFlat {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: #8b929e;
+}
+
+.metaHint {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #5c6370;
+}
+
+.removeBtn {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: #5c6370;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 0 0.25rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.removeBtn:hover {
+  color: #e8eaed;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.footer {
+  padding: 0.75rem 1rem 1rem;
+  border-top: 1px solid #232830;
+  margin-top: auto;
+}
+
+.footerLabel {
+  display: block;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #5c6370;
+  margin-bottom: 0.5rem;
+}
+
+.addRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.addChip {
+  border: 1px solid #2e3540;
+  background: #181c24;
+  color: #c4c9d4;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.addChip:hover {
+  border-color: #3d4654;
+  background: #1f242e;
+}
+
+.addHint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #5c6370;
+}
+
+.empty {
+  margin: 0;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #5c6370;
+}

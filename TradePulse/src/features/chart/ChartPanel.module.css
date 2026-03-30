@@ -1,0 +1,18 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 260px;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c4c9d4;
+}
+
+.chart {
+  flex: 1;
+  min-height: 220px;
+}
