@@ -1,7 +1,7 @@
 File: TradePulse/src/features/portfolio/index.ts
-Finding: content-score-low
+Finding: content-weakness
 Category: content
-Recommendation: Content quality score is low: 25.0.
+Recommendation: Missing title tag
 Patch:
 export { PortfolioPanel } from './PortfolioPanel';
  export {
@@ -12,6 +12,6 @@ export { PortfolioPanel } from './PortfolioPanel';
  export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
  
 +/**
-+ * Portfolio feature module providing components and utility functions
-+ * for tracking and displaying live asset performance metrics.
++ * Portfolio Feature
++ * @title Portfolio
 + */
