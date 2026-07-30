@@ -1,7 +1,7 @@
 /**
- * @title Portfolio Management Dashboard
- * @description View and manage your live cryptocurrency portfolio metrics and asset performance.
+ * @description Manage and view your cryptocurrency portfolio metrics, track live performance, and analyze asset distribution with TradePulse.
  */
+
 export { PortfolioPanel } from './PortfolioPanel';
 export {
   computeLivePortfolioMetrics,
