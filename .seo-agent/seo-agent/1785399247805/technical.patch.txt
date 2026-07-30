@@ -1,0 +1,72 @@
+File: README.md
+Finding: technical-robots-error
+Category: technical
+Recommendation: Failed to fetch robots.txt; verify network and URL.
+Patch:
+-# SEO Agent Java Migration
++--- a/README.md
+-
+++++ b/README.md
+-This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
++@@ -32,6 +32,7 @@
+-
++ - `report.json`
+-## Structure
++ - `pr-draft.txt`
+-
++ - `remediation-diffs.txt`
+-- `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
+++- `robots.txt` (if fetch fails, verify network and URL)
+-- `src/main/java/com/example/seoagent/crawler/` — crawler classes
++ - `verification-summary.txt`
+-- `src/main/java/com/example/seoagent/audit/` — audit and findings classes
++ - `report-summary.txt`
+-- `src/main/java/com/example/seoagent/lighthouse/` — Lighthouse-based performance checks
++ - `github-pr.txt`
+-- `src/main/java/com/example/seoagent/reporting/` — report summary generation
+-
+-## Build
+-
+-```powershell
+-mvn package
+-```
+-
+-## Run
+-
+-From the project root:
+-
+-```powershell
+-cd C:\Users\sahilc\Documents\SeoAgent\java-app
+-run.bat https://example.com
+-```
+-
+-Or directly:
+-
+-```powershell
+-cd C:\Users\sahilc\Documents\SeoAgent\java-app
+-mvn compile exec:java -Dexec.args="https://example.com"
+-```
+-
+-Or with environment variables:
+-
+-```powershell
+-$env:TARGET_URL = "https://example.com"
+-$env:REPO_URL = "https://github.com/owner/repo.git"
+-$env:GITHUB_TOKEN = "ghp_..."
+-$env:GOOGLE_API_KEY = "your-gemini-api-key"
+-$env:GOOGLE_MODEL = "gemini-3.6-flash"
+-$env:CRAWL_PAGE_LIMIT = "5"
+-mvn compile exec:java
+-```
+-
+-### Outputs
+-
+-The run writes these files into `target/`:
+-
+-- `report.json`
+-- `pr-draft.txt`
+-- `remediation-diffs.txt`
+-- `verification-summary.txt`
+-- `report-summary.txt`
+-- `github-pr.txt`
+-
