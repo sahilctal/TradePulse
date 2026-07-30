@@ -1,20 +1,21 @@
 File: TradePulse/src/features/portfolio/index.ts
-Finding: content-weakness
+Finding: content-h1
 Category: content
-Recommendation: Page body appears empty
+Recommendation: Add a clear H1 heading structure to the page.
 Patch:
 -export { PortfolioPanel } from './PortfolioPanel';
 +--- a/TradePulse/src/features/portfolio/index.ts
 -export {
 ++++ b/TradePulse/src/features/portfolio/index.ts
 -  computeLivePortfolioMetrics,
-+@@ -1,3 +1,4 @@
++@@ -1,4 +1,5 @@
 -  formatCoinAtoms,
-++/** Portfolio feature module providing UI components and metric calculations. */
--  formatUsdFromCents,
 + export { PortfolioPanel } from './PortfolioPanel';
+-  formatUsdFromCents,
+++export { PortfolioHeader } from './PortfolioHeader';
 -} from './portfolioMetrics';
 + export {
 -export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
 +   computeLivePortfolioMetrics,
 -
++   formatCoinAtoms,
