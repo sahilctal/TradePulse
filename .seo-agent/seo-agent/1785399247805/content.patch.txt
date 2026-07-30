@@ -1,0 +1,90 @@
+File: README.md
+Finding: content-score-low
+Category: content
+Recommendation: Content quality score is low: 25.0.
+Patch:
+-# SEO Agent Java Migration
++--- a/README.md
+-
+++++ b/README.md
+-This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
++@@ -1,6 +1,10 @@
+-
++ # SEO Agent Java Migration
+-## Structure
++ 
+-
++-This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
+-- `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
+++This project provides a Java/Maven-based prototype of the SEO Agent pipeline designed to automate website auditing and remediation. It crawls target URLs, performs Lighthouse-based performance analysis, generates detailed audit reports, and creates automated GitHub pull requests for suggested improvements.
+-- `src/main/java/com/example/seoagent/crawler/` — crawler classes
++ 
+-- `src/main/java/com/example/seoagent/audit/` — audit and findings classes
++ ## Structure
+-- `src/main/java/com/example/seoagent/lighthouse/` — Lighthouse-based performance checks
++ 
+-- `src/main/java/com/example/seoagent/reporting/` — report summary generation
++@@ -17,13 +21,11 @@
+-
++ 
+-## Build
++ ## Run
+-
++ 
+-```powershell
++-From the project root:
+-mvn package
+++To execute the application, navigate to the project directory and use the following commands:
+-```
++ 
+-
++ ```powershell
+-## Run
++-cd C:\Users\sahilc\Documents\SeoAgent\java-app
+-
++ run.bat https://example.com
+-From the project root:
++ ```
+-
++ 
+-```powershell
++ Or directly:
+-cd C:\Users\sahilc\Documents\SeoAgent\java-app
++ 
+-run.bat https://example.com
++ ```powershell
+-```
++-cd C:\Users\sahilc\Documents\SeoAgent\java-app
+-
++ mvn compile exec:java -Dexec.args="https://example.com"
+-Or directly:
++ ```
+-
+-```powershell
+-cd C:\Users\sahilc\Documents\SeoAgent\java-app
+-mvn compile exec:java -Dexec.args="https://example.com"
+-```
+-
+-Or with environment variables:
+-
+-```powershell
+-$env:TARGET_URL = "https://example.com"
+-$env:REPO_URL = "https://github.com/owner/repo.git"
+-$env:GITHUB_TOKEN = "ghp_..."
+-$env:GOOGLE_API_KEY = "your-gemini-api-key"
+-$env:GOOGLE_MODEL = "gemini-3.6-flash"
+-$env:CRAWL_PAGE_LIMIT = "5"
+-mvn compile exec:java
+-```
+-
+-### Outputs
+-
+-The run writes these files into `target/`:
+-
+-- `report.json`
+-- `pr-draft.txt`
+-- `remediation-diffs.txt`
+-- `verification-summary.txt`
+-- `report-summary.txt`
+-- `github-pr.txt`
+-
