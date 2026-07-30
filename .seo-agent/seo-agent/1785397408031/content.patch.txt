@@ -1,7 +1,7 @@
 File: TradePulse/src/features/portfolio/index.ts
-Finding: content-weakness
+Finding: content-h1
 Category: content
-Recommendation: Page body appears empty
+Recommendation: Add a clear H1 heading structure to the page.
 Patch:
 export { PortfolioPanel } from './PortfolioPanel';
  export {
@@ -12,6 +12,7 @@ export { PortfolioPanel } from './PortfolioPanel';
  export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
  
 +/**
-+ * Portfolio feature module providing components and utilities for 
-+ * tracking and displaying user investment performance.
++ * @description
++ * Ensure that the component consuming these exports includes a clear H1 heading 
++ * (e.g., <h1>Portfolio Overview</h1>) to maintain proper document structure.
 + */
