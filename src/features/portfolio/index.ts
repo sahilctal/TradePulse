@@ -1,3 +1,4 @@
-The finding "technical-canonical" refers to a meta tag in HTML, which cannot be implemented in a TypeScript barrel file (`index.ts`). Barrel files are used for exporting modules and do not render HTML or interact with the document head.
-
-If you intended to add a canonical link to a React component (e.g., `PortfolioPanel.tsx`), please provide that file. If this is a mistake, no changes can be made to `index.ts` to satisfy this requirement.
+/** Portfolio Management and Metrics */
+export { PortfolioPanel } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
