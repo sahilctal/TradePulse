@@ -6,6 +6,7 @@ export {
 export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
 
 /**
- * Portfolio feature module providing components and utilities for 
- * tracking and displaying user investment performance.
+ * @description
+ * Ensure that the component consuming these exports includes a clear H1 heading 
+ * (e.g., <h1>Portfolio Overview</h1>) to maintain proper document structure.
  */
