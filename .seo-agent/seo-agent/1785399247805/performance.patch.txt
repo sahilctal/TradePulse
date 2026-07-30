@@ -1,0 +1,72 @@
+File: README.md
+Finding: perf-cwv
+Category: performance
+Recommendation: Improve Core Web Vitals and performance score for the page
+Patch:
+-# SEO Agent Java Migration
++--- a/README.md
+-
+++++ b/README.md
+-This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
++@@ -4,6 +4,7 @@
+-
++ 
+-## Structure
++ ## Structure
+-
++ 
+-- `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
+++- `src/main/java/com/example/seoagent/performance/` — Core Web Vitals optimization logic
+-- `src/main/java/com/example/seoagent/crawler/` — crawler classes
++ - `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
+-- `src/main/java/com/example/seoagent/audit/` — audit and findings classes
++ - `src/main/java/com/example/seoagent/crawler/` — crawler classes
+-- `src/main/java/com/example/seoagent/lighthouse/` — Lighthouse-based performance checks
++ - `src/main/java/com/example/seoagent/audit/` — audit and findings classes
+-- `src/main/java/com/example/seoagent/reporting/` — report summary generation
+-
+-## Build
+-
+-```powershell
+-mvn package
+-```
+-
+-## Run
+-
+-From the project root:
+-
+-```powershell
+-cd C:\Users\sahilc\Documents\SeoAgent\java-app
+-run.bat https://example.com
+-```
+-
+-Or directly:
+-
+-```powershell
+-cd C:\Users\sahilc\Documents\SeoAgent\java-app
+-mvn compile exec:java -Dexec.args="https://example.com"
+-```
+-
+-Or with environment variables:
+-
+-```powershell
+-$env:TARGET_URL = "https://example.com"
+-$env:REPO_URL = "https://github.com/owner/repo.git"
+-$env:GITHUB_TOKEN = "ghp_..."
+-$env:GOOGLE_API_KEY = "your-gemini-api-key"
+-$env:GOOGLE_MODEL = "gemini-3.6-flash"
+-$env:CRAWL_PAGE_LIMIT = "5"
+-mvn compile exec:java
+-```
+-
+-### Outputs
+-
+-The run writes these files into `target/`:
+-
+-- `report.json`
+-- `pr-draft.txt`
+-- `remediation-diffs.txt`
+-- `verification-summary.txt`
+-- `report-summary.txt`
+-- `github-pr.txt`
+-
