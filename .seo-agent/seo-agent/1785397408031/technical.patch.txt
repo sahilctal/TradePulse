@@ -1,0 +1,15 @@
+File: TradePulse/src/features/portfolio/index.ts
+Finding: technical-status-code
+Category: technical
+Recommendation: Page returned an HTTP error status.
+Patch:
+export { PortfolioPanel } from './PortfolioPanel';
+ export {
+   computeLivePortfolioMetrics,
+   formatCoinAtoms,
+   formatUsdFromCents,
+ } from './portfolioMetrics';
+ export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+ 
++// Note: Ensure the underlying API calls within PortfolioPanel or portfolioMetrics 
++// include proper error handling (e.g., try/catch blocks) to manage non-200 HTTP status codes.
