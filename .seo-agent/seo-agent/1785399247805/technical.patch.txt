@@ -1,36 +1,44 @@
 File: README.md
-Finding: technical-robots-error
+Finding: technical-status-code
 Category: technical
-Recommendation: Failed to fetch robots.txt; verify network and URL.
+Recommendation: Page returned an HTTP error status.
 Patch:
 -# SEO Agent Java Migration
 +--- a/README.md
 -
 ++++ b/README.md
 -This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
-+@@ -32,6 +32,7 @@
++@@ -20,7 +20,7 @@
 -
-+ - `report.json`
++ From the project root:
 -## Structure
-+ - `pr-draft.txt`
++ 
 -
-+ - `remediation-diffs.txt`
++ ```powershell
 -- `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
-++- `robots.txt` (if fetch fails, verify network and URL)
++-cd C:\Users\sahilc\Documents\SeoAgent\java-app
 -- `src/main/java/com/example/seoagent/crawler/` — crawler classes
-+ - `verification-summary.txt`
+++cd java-app
 -- `src/main/java/com/example/seoagent/audit/` — audit and findings classes
-+ - `report-summary.txt`
++ run.bat https://example.com
 -- `src/main/java/com/example/seoagent/lighthouse/` — Lighthouse-based performance checks
-+ - `github-pr.txt`
++ ```
 -- `src/main/java/com/example/seoagent/reporting/` — report summary generation
++ 
 -
++@@ -28,7 +28,7 @@
 -## Build
++ 
 -
++ ```powershell
 -```powershell
++-cd C:\Users\sahilc\Documents\SeoAgent\java-app
 -mvn package
+++cd java-app
 -```
++ mvn compile exec:java -Dexec.args="https://example.com"
 -
++ ```
 -## Run
 -
 -From the project root:
