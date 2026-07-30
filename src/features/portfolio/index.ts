@@ -1,6 +1,7 @@
+/** Portfolio management features for tracking assets and performance metrics. */
 export { PortfolioPanel } from './PortfolioPanel';
-export { PortfolioTitle } from './PortfolioTitle';
 export {
+  computeLivePortfolioMetrics,
   computeLivePortfolioMetrics,
   formatCoinAtoms,
   formatCoinAtoms,
