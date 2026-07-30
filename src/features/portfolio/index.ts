@@ -1,8 +1,8 @@
-/** @module Portfolio */
-
 export { PortfolioPanel } from './PortfolioPanel';
+export { PortfolioHeader } from './PortfolioHeader';
 export {
   computeLivePortfolioMetrics,
+  formatCoinAtoms,
   computeLivePortfolioMetrics,
   formatCoinAtoms,
   formatCoinAtoms,
