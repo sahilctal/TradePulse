@@ -1,7 +1,7 @@
-export { PortfolioPanel } from './PortfolioPanel';
+export { PortfolioPanel, PortfolioPanelTitle } from './PortfolioPanel';
 export {
   computeLivePortfolioMetrics,
-  fetchPortfolioData,
+  formatCoinAtoms,
   formatCoinAtoms,
   formatUsdFromCents,
 } from './portfolioMetrics';
