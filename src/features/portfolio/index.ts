@@ -1,7 +1,7 @@
-// Portfolio feature exports
-export { PortfolioPanel } from './PortfolioPanel';
+export { PortfolioPanel, PortfolioHeader } from './PortfolioPanel';
 export {
   computeLivePortfolioMetrics,
+  formatCoinAtoms,
   computeLivePortfolioMetrics,
   formatCoinAtoms,
   formatCoinAtoms,
