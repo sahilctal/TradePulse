@@ -1,23 +1,17 @@
 File: TradePulse/src/features/portfolio/index.ts
 Finding: content-weakness
 Category: content
-Recommendation: Missing meta description
+Recommendation: Page body appears empty
 Patch:
--export { PortfolioPanel } from './PortfolioPanel';
+export { PortfolioPanel } from './PortfolioPanel';
+ export {
+   computeLivePortfolioMetrics,
+   formatCoinAtoms,
+   formatUsdFromCents,
+ } from './portfolioMetrics';
+ export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+ 
 +/**
--export {
-+ * @description Portfolio management features including live metrics computation and formatting utilities.
--  computeLivePortfolioMetrics,
++ * Portfolio feature module providing components and utilities for 
++ * tracking and displaying user investment performance.
 + */
--  formatCoinAtoms,
-+export { PortfolioPanel } from './PortfolioPanel';
--  formatUsdFromCents,
-+export {
--} from './portfolioMetrics';
-+  computeLivePortfolioMetrics,
--export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
-+  formatCoinAtoms,
--
-+  formatUsdFromCents,
-+} from './portfolioMetrics';
-+export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
