@@ -6,6 +6,7 @@ export {
 export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
 
 /**
- * Portfolio feature module providing components and utility functions
- * for tracking and displaying live asset performance metrics.
+ * Note: Ensure that the data fetching logic within PortfolioPanel or its 
+ * associated hooks handles HTTP error status codes (e.g., 4xx, 5xx) 
+ * gracefully to prevent UI crashes or silent failures.
  */
