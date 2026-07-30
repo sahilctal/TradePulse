@@ -1,13 +1,25 @@
 File: TradePulse/src/features/portfolio/index.ts
-Finding: content-alt
+Finding: content-guidance
 Category: content
-Recommendation: Add descriptive alt text to meaningful images.
+Recommendation: Add a concise, descriptive title tag with target keywords.
 Patch:
-export { PortfolioPanel } from './PortfolioPanel';
- export {
-   computeLivePortfolioMetrics,
-   formatCoinAtoms,
-   formatUsdFromCents,
- } from './portfolioMetrics';
- export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+-export { PortfolioPanel } from './PortfolioPanel';
++/**
+-export {
++ * @title Portfolio Management Dashboard
+-  computeLivePortfolioMetrics,
++ * @description Manage your cryptocurrency assets, view live portfolio metrics, and track ticker positions.
+-  formatCoinAtoms,
++ */
+-  formatUsdFromCents,
++
+-} from './portfolioMetrics';
++export { PortfolioPanel } from './PortfolioPanel';
+-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
++export {
 -
++  computeLivePortfolioMetrics,
++  formatCoinAtoms,
++  formatUsdFromCents,
++} from './portfolioMetrics';
++export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
