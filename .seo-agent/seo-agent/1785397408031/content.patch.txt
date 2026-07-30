@@ -1,17 +1,23 @@
 File: TradePulse/src/features/portfolio/index.ts
 Finding: content-weakness
 Category: content
-Recommendation: Missing title tag
+Recommendation: Missing meta description
 Patch:
-export { PortfolioPanel } from './PortfolioPanel';
- export {
-   computeLivePortfolioMetrics,
-   formatCoinAtoms,
-   formatUsdFromCents,
- } from './portfolioMetrics';
- export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
- 
+-export { PortfolioPanel } from './PortfolioPanel';
 +/**
-+ * Portfolio Feature
-+ * @title Portfolio
+-export {
++ * @description Portfolio management features including live metrics computation and formatting utilities.
+-  computeLivePortfolioMetrics,
 + */
+-  formatCoinAtoms,
++export { PortfolioPanel } from './PortfolioPanel';
+-  formatUsdFromCents,
++export {
+-} from './portfolioMetrics';
++  computeLivePortfolioMetrics,
+-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
++  formatCoinAtoms,
+-
++  formatUsdFromCents,
++} from './portfolioMetrics';
++export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
