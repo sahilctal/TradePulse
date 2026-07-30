@@ -1,28 +1,26 @@
 File: README.md
-Finding: content-weakness
+Finding: content-h1
 Category: content
-Recommendation: Page body appears empty
+Recommendation: Add a clear H1 heading structure to the page.
 Patch:
 -# SEO Agent Java Migration
 +--- a/README.md
 -
 ++++ b/README.md
 -This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
-+@@ -45,3 +45,7 @@
++@@ -1,3 +1,5 @@
 -
-+ - `verification-summary.txt`
+++# SEO Agent Java Migration
 -## Structure
-+ - `report-summary.txt`
+++
 -
-+ - `github-pr.txt`
++ # SEO Agent Java Migration
 -- `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
-++
++ 
 -- `src/main/java/com/example/seoagent/crawler/` — crawler classes
-++## License
++ This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
 -- `src/main/java/com/example/seoagent/audit/` — audit and findings classes
-++
 -- `src/main/java/com/example/seoagent/lighthouse/` — Lighthouse-based performance checks
-++This project is provided for educational purposes.
 -- `src/main/java/com/example/seoagent/reporting/` — report summary generation
 -
 -## Build
