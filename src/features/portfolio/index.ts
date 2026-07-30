@@ -1,4 +1,4 @@
-/** Portfolio management features for tracking assets and performance metrics. */
+// Portfolio feature exports
 export { PortfolioPanel } from './PortfolioPanel';
 export {
   computeLivePortfolioMetrics,
