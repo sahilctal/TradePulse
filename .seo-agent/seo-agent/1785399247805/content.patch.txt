@@ -1,26 +1,28 @@
 File: README.md
 Finding: content-weakness
 Category: content
-Recommendation: Missing title tag
+Recommendation: Missing meta description
 Patch:
 -# SEO Agent Java Migration
 +--- a/README.md
 -
 ++++ b/README.md
 -This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
-+@@ -1,3 +1,5 @@
--
-++# SEO Agent Java Migration
--## Structure
-++
++@@ -1,5 +1,7 @@
 -
 + # SEO Agent Java Migration
--- `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
+-## Structure
 + 
+-
+++A Java/Maven-based prototype of the SEO Agent pipeline designed to automate website auditing, performance checks, and remediation reporting.
+-- `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
+++
 -- `src/main/java/com/example/seoagent/crawler/` — crawler classes
 + This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
 -- `src/main/java/com/example/seoagent/audit/` — audit and findings classes
++ 
 -- `src/main/java/com/example/seoagent/lighthouse/` — Lighthouse-based performance checks
++ ## Structure
 -- `src/main/java/com/example/seoagent/reporting/` — report summary generation
 -
 -## Build
