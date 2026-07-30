@@ -1,5 +1,3 @@
-The provided source file `TradePulse/src/features/portfolio/index.ts` is an index file that exports components and utility functions. It does not contain any JSX or image elements that require `alt` text. Therefore, no changes are required to this file to address the "content-alt" finding.
-  formatUsdFromCents,
-} from './portfolioMetrics';
-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
-export { PortfolioSchema } from './PortfolioSchema';
+The finding "technical-canonical" refers to a meta tag in HTML, which cannot be implemented in a TypeScript barrel file (`index.ts`). Barrel files are used for exporting modules and do not render HTML or interact with the document head.
+
+If you intended to add a canonical link to a React component (e.g., `PortfolioPanel.tsx`), please provide that file. If this is a mistake, no changes can be made to `index.ts` to satisfy this requirement.
