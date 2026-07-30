@@ -1,0 +1,19 @@
+File: TradePulse/src/features/portfolio/index.ts
+Finding: schema-missing
+Category: structured-data
+Recommendation: Add JSON-LD structured data for the page.
+Patch:
+export { PortfolioPanel } from './PortfolioPanel';
+ export {
+   computeLivePortfolioMetrics,
+   formatCoinAtoms,
+   formatUsdFromCents,
+ } from './portfolioMetrics';
+ export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+ 
++export const portfolioSchema = {
++  '@context': 'https://schema.org',
++  '@type': 'FinancialService',
++  name: 'TradePulse Portfolio',
++  description: 'Real-time portfolio tracking and metrics dashboard.',
++};
