@@ -1,24 +1,23 @@
 File: TradePulse/src/features/portfolio/index.ts
 Finding: content-guidance
 Category: content
-Recommendation: Add a concise, descriptive title tag with target keywords.
+Recommendation: Add a meta description that summarizes the page and includes primary keywords.
 Patch:
 -export { PortfolioPanel } from './PortfolioPanel';
 +/**
 -export {
-+ * @title Portfolio Management Dashboard
++ * @description Manage and view your cryptocurrency portfolio metrics, including live performance tracking, coin holdings, and USD valuation.
 -  computeLivePortfolioMetrics,
-+ * @description Manage your cryptocurrency assets, view live portfolio metrics, and track ticker positions.
--  formatCoinAtoms,
 + */
--  formatUsdFromCents,
+-  formatCoinAtoms,
 +
--} from './portfolioMetrics';
+-  formatUsdFromCents,
 +export { PortfolioPanel } from './PortfolioPanel';
--export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+-} from './portfolioMetrics';
 +export {
--
+-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
 +  computeLivePortfolioMetrics,
+-
 +  formatCoinAtoms,
 +  formatUsdFromCents,
 +} from './portfolioMetrics';
