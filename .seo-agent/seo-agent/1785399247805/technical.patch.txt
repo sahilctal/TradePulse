@@ -1,44 +1,36 @@
 File: README.md
-Finding: technical-status-code
+Finding: technical-sitemap-error
 Category: technical
-Recommendation: Page returned an HTTP error status.
+Recommendation: Failed to fetch sitemap.xml; verify availability.
 Patch:
 -# SEO Agent Java Migration
 +--- a/README.md
 -
 ++++ b/README.md
 -This folder contains a Java/Maven-based prototype of the SEO Agent pipeline.
-+@@ -20,7 +20,7 @@
++@@ -32,6 +32,7 @@
 -
-+ From the project root:
++ 
 -## Structure
-+ 
++ ### Outputs
 -
-+ ```powershell
++ 
 -- `src/main/java/com/example/seoagent/SeoAgentApplication.java` — entry point
-+-cd C:\Users\sahilc\Documents\SeoAgent\java-app
+++Note: Ensure `sitemap.xml` is accessible at the target URL to avoid technical-sitemap-error.
 -- `src/main/java/com/example/seoagent/crawler/` — crawler classes
-++cd java-app
++ The run writes these files into `target/`:
 -- `src/main/java/com/example/seoagent/audit/` — audit and findings classes
-+ run.bat https://example.com
++ 
 -- `src/main/java/com/example/seoagent/lighthouse/` — Lighthouse-based performance checks
-+ ```
++ - `report.json`
 -- `src/main/java/com/example/seoagent/reporting/` — report summary generation
-+ 
 -
-+@@ -28,7 +28,7 @@
 -## Build
-+ 
 -
-+ ```powershell
 -```powershell
-+-cd C:\Users\sahilc\Documents\SeoAgent\java-app
 -mvn package
-++cd java-app
 -```
-+ mvn compile exec:java -Dexec.args="https://example.com"
 -
-+ ```
 -## Run
 -
 -From the project root:
