@@ -1,9 +1,1 @@
-export { PortfolioPanel, PortfolioHeader } from './PortfolioPanel';
-export {
-  computeLivePortfolioMetrics,
-  formatCoinAtoms,
-  computeLivePortfolioMetrics,
-  formatCoinAtoms,
-  formatCoinAtoms,
-  formatUsdFromCents,
-} from './portfolioMetrics';
+The provided source file `TradePulse/src/features/portfolio/index.ts` is an index file that exports components and functions. It does not contain any JSX or image elements that would require `alt` text. Therefore, no changes are required to this specific file to address the "content-alt" finding.
