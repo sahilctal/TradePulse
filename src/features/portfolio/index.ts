@@ -1,3 +1,9 @@
-The provided file `TradePulse/src/features/portfolio/index.ts` is a TypeScript barrel file used for exporting components and utilities. Canonical tags are HTML elements (`<link rel="canonical" ... />`) that must be placed within the `<head>` section of an HTML document. Since this file is a JavaScript/TypeScript module and not an HTML template, it is not possible to add a canonical tag here.
-
-If you intended to add this to a React component file (e.g., `PortfolioPanel.tsx`), please provide that file instead. If this is a configuration file for a meta-framework (like Next.js), please specify the framework so the correct metadata export can be applied.
+/** Portfolio Management and Metrics */
+export { PortfolioPanel } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
+  formatCoinAtoms,
+  formatUsdFromCents,
+} from './portfolioMetrics';
+export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+export { PortfolioSchema } from './PortfolioSchema';
