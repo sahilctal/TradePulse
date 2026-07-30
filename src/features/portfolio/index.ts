@@ -1,5 +1,8 @@
-The provided source file `TradePulse/src/features/portfolio/index.ts` is an index file that exports components and utility functions. It does not contain any JSX or image elements that require `alt` text. Therefore, no changes are required to this file to address the "content-alt" finding.
-  formatUsdFromCents,
-} from './portfolioMetrics';
+/**
+ * Portfolio Management Features
+ */
+export { PortfolioPanel } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
 export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
 export { PortfolioSchema } from './PortfolioSchema';
