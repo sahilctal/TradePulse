@@ -1,7 +1,7 @@
 File: TradePulse/src/features/portfolio/index.ts
-Finding: content-h1
+Finding: content-alt
 Category: content
-Recommendation: Add a clear H1 heading structure to the page.
+Recommendation: Add descriptive alt text to meaningful images.
 Patch:
 export { PortfolioPanel } from './PortfolioPanel';
  export {
@@ -10,9 +10,4 @@ export { PortfolioPanel } from './PortfolioPanel';
    formatUsdFromCents,
  } from './portfolioMetrics';
  export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
- 
-+/**
-+ * @description
-+ * Ensure that the component consuming these exports includes a clear H1 heading 
-+ * (e.g., <h1>Portfolio Overview</h1>) to maintain proper document structure.
-+ */
+-
