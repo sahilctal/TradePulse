@@ -1,0 +1,21 @@
+File: TradePulse/src/features/portfolio/index.ts
+Finding: content-alt
+Category: content
+Recommendation: Add descriptive alt text to meaningful images.
+Patch:
+-export { PortfolioPanel } from './PortfolioPanel';
++--- a/TradePulse/src/features/portfolio/index.ts
+-export {
+++++ b/TradePulse/src/features/portfolio/index.ts
+-  computeLivePortfolioMetrics,
++@@ -1,4 +1,4 @@
+-  formatCoinAtoms,
++-export { PortfolioPanel } from './PortfolioPanel';
+-  formatUsdFromCents,
+++export { PortfolioPanel } from './PortfolioPanel';
+-} from './portfolioMetrics';
++ export {
+-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
++   computeLivePortfolioMetrics,
+-
++   formatCoinAtoms,

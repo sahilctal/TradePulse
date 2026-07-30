@@ -1,0 +1,3 @@
+-
+-**Summary:** responsiveness comes from **narrow subscriptions**, **memoized expensive derivations**, **stable props** where data does not change, and **bounded** chart/limit algorithms—not from blocking the main thread.
+-
