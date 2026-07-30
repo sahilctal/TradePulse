@@ -1,3 +1,5 @@
+```typescript
+export { PortfolioPanel } from './PortfolioPanel';
 export {
   computeLivePortfolioMetrics,
   formatCoinAtoms,
@@ -5,9 +7,7 @@ export {
 } from './portfolioMetrics';
 export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
 
-export const portfolioSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FinancialService',
-  'name': 'TradePulse Portfolio',
-  'description': 'Real-time portfolio tracking and metrics dashboard.',
-};
+/**
+ * Canonical URL: https://yourdomain.com/portfolio
+ */
+```
