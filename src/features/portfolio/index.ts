@@ -1,3 +1,1 @@
-```diff
---- a/TradePulse/src/features/portfolio/index.ts
-+++ b/TradePulse/src/features/portfolio/
+ Provide the edit in either: 1) a unified diff (preferred) beginning with '--- a/TradePulse/src/features/portfolio/index.
