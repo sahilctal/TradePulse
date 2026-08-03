@@ -1,1 +1,4 @@
- Provide the edit in either: 1) a unified diff (preferred) beginning with '--- a/TradePulse/src/features/portfolio/index.
+Or maybe `index.ts` is re-exporting?
+Wait, let's re-read the file carefully.
+```ts
+export {
