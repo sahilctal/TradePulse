@@ -1,3 +1,1 @@
-type': 'WebPage' as const,
-  name: 'TradePulse Portfolio',
-  description: 'Real-time portfolio tracking and metrics',
+An issue check indicates that adding SEO / HTML meta tags like canonical links directly into a TypeScript re-export barrel file (`index.ts`) is not
