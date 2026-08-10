@@ -1,7 +1,1 @@
-/**
- * Portfolio feature module providing portfolio management components and metric utilities.
- */
-
-export { PortfolioPanel } from './PortfolioPanel';
-export {
-  computeLivePortfolioMetrics,
+An elegant way to resolve this finding is to ensure the main component (`PortfolioPanel`) is also exported as the default export, which satisfies static analysis tools or bund
