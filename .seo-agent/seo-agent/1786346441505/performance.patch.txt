@@ -1,0 +1,7 @@
+File: TradePulse/src/engine/mock-price-engine.ts
+Finding: perf-cwv
+Category: performance
+Recommendation: Improve Core Web Vitals and performance score for the page
+Patch:
+--- a/TradePulse/src/engine/mock-price-engine.ts
++++ b/TradePulse/src/engine/mock-price
