@@ -1,1 +1,3 @@
-An issue check indicates that adding SEO / HTML meta tags like canonical links directly into a TypeScript re-export barrel file (`index.ts`) is not
+```diff
+--- a/TradePulse/src/features/portfolio/index.ts
++++ b/TradePulse/src/features/portfolio/
