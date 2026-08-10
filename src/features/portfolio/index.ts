@@ -1,1 +1,1 @@
-An issue with content quality score usually indicates lack of descriptive documentation/module overview in entrypoint files. Below is the unified diff adding module-level documentation to
+export { PortfolioPanel } from './PortfolioPanel';
