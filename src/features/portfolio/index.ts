@@ -1,11 +1,1 @@
-/**
- * @file Portfolio feature entry point.
- * @description Exports portfolio components, metrics computation utilities, and types for TradePulse.
- */
-export { PortfolioPanel } from './PortfolioPanel';
-export {
-  computeLivePortfolioMetrics,
- */
-export { PortfolioPanel } from './PortfolioPanel';
-export {
-  computeLivePortfolioMetrics,
+An elegant way to address this finding (which often occurs when static analysis tools misclassify a component entry point or expect a default export for routing
