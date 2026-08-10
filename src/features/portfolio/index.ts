@@ -1,1 +1,3 @@
-An analysis of the provided file `TradePulse/src/features/portfolio/index.ts` shows that it only contains TypeScript exports and no JSX,
+type': 'WebPage' as const,
+  name: 'TradePulse Portfolio',
+  description: 'Real-time portfolio tracking and metrics',
