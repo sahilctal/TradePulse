@@ -1,1 +1,2 @@
-An elegant way to address this finding (which often occurs when static analysis tools misclassify a component entry point or expect a default export for routing
+/src/features/portfolio/index.ts`?
+No, the instructions state: "produce a single, machine-parseable edit for
