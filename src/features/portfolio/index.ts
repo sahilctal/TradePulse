@@ -1,1 +1,1 @@
-An elegant way to resolve this finding is to ensure the main component (`PortfolioPanel`) is also exported as the default export, which satisfies static analysis tools or bund
+An analysis of the finding "content-h1" on `TradePulse/src/features/portfolio/index.ts` suggests that the static
