@@ -1,6 +1,10 @@
 /**
- * Portfolio feature module providing UI components, metrics calculations,
- * formatting helpers, and type definitions for managing user positions.
+ * @file Portfolio feature entry point.
+ * @description Exports portfolio components, metrics computation utilities, and types for TradePulse.
+ */
+export { PortfolioPanel } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
  */
 export { PortfolioPanel } from './PortfolioPanel';
 export {
