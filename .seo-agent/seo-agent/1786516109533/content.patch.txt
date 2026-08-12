@@ -1,0 +1,7 @@
+File: TradePulse/src/features/portfolio/index.ts
+Finding: content-score-low
+Category: content
+Recommendation: Content quality score is low: 25.0.
+Patch:
+--- a/TradePulse/src/features/portfolio/index.ts
++++ b/TradePulse/src/features/portfolio/index.ts
