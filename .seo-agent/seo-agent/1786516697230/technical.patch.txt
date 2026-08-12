@@ -1,0 +1,7 @@
+File: TradePulse/src/engine/mock-price-engine.ts
+Finding: technical-robots-error
+Category: technical
+Recommendation: Failed to fetch robots.txt; verify network and URL.
+Patch:
+--- a/TradePulse/src/engine/mock-price-engine.ts
++++ b/TradePulse/src/engine/mock-
