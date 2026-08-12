@@ -1,7 +1,15 @@
-File: TradePulse/src/engine/mock-price-engine.ts
-Finding: technical-robots-error
+File: TradePulse/src/features/portfolio/index.ts
+Finding: technical-status-code
 Category: technical
-Recommendation: Failed to fetch robots.txt; verify network and URL.
+Recommendation: Page returned an HTTP error status.
 Patch:
---- a/TradePulse/src/engine/mock-price-engine.ts
-+++ b/TradePulse/src/engine/mock-
+-export { PortfolioPanel } from './PortfolioPanel';
++` or something that needs error handling, or maybe a route / fetch error?
+-export {
++Wait, in React / Next.js / routing
+-  computeLivePortfolioMetrics,
+-  formatCoinAtoms,
+-  formatUsdFromCents,
+-} from './portfolioMetrics';
+-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+-
