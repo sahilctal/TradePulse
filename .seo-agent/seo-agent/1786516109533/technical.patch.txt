@@ -1,0 +1,14 @@
+File: TradePulse/src/features/portfolio/index.ts
+Finding: technical-canonical
+Category: technical
+Recommendation: Add a self-referencing canonical tag to the page.
+Patch:
+-export { PortfolioPanel } from './PortfolioPanel';
++An automated check flagged `TradePulse/src/features/portfolio/index.ts` with the recommendation to add a self-refer
+-export {
+-  computeLivePortfolioMetrics,
+-  formatCoinAtoms,
+-  formatUsdFromCents,
+-} from './portfolioMetrics';
+-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+-

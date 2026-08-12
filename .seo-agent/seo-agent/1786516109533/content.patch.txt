@@ -1,0 +1,7 @@
+File: TradePulse/src/features/portfolio/index.ts
+Finding: content-guidance
+Category: content
+Recommendation: Add meaningful page content with at least 200 words.
+Patch:
+--- a/TradePulse/src/features/portfolio/index.ts
++++ b/TradePulse/src/features/portfolio/
