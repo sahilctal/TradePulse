@@ -1,17 +1,7 @@
 File: TradePulse/src/features/portfolio/index.ts
 Finding: content-guidance
 Category: content
-Recommendation: Add a meta description that summarizes the page and includes primary keywords.
+Recommendation: Add meaningful page content with at least 200 words.
 Patch:
-```diff
 --- a/TradePulse/src/features/portfolio/index.ts
-+++ b/TradePulse/src/features/portfolio/index.ts
-@@ -1,3 +1,7 @@
-+/**
-+ * Portfolio feature module providing live metrics, position tracking, and UI components
-+ * for managing real-time trade positions and portfolio performance in TradePulse.
-+ */
- export { PortfolioPanel } from './PortfolioPanel';
- export {
-   computeLivePortfolioMetrics,
-```
++++ b/TradePulse/src/features/portfolio/
