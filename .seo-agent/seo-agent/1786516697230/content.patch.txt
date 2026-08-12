@@ -1,0 +1,14 @@
+File: TradePulse/src/features/portfolio/index.ts
+Finding: content-guidance
+Category: content
+Recommendation: Add meaningful page content with at least 200 words.
+Patch:
+-export { PortfolioPanel } from './PortfolioPanel';
++An elegant way to resolve this content-guidance finding is to add a comprehensive, high-quality JSDoc documentation block at the top of the
+-export {
+-  computeLivePortfolioMetrics,
+-  formatCoinAtoms,
+-  formatUsdFromCents,
+-} from './portfolioMetrics';
+-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+-
