@@ -1,0 +1,7 @@
+File: TradePulse/src/features/portfolio/index.ts
+Finding: schema-missing
+Category: structured-data
+Recommendation: Add JSON-LD structured data for the page.
+Patch:
+--- a/TradePulse/src/features/portfolio/index.ts
++++ b/TradePulse/src/features/portfolio/
