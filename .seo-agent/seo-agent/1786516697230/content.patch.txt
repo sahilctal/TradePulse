@@ -1,18 +1,17 @@
-File: TradePulse/src/domain/limitOrders/index.ts
+File: TradePulse/src/features/portfolio/index.ts
 Finding: content-guidance
 Category: content
-Recommendation: Add a concise, descriptive title tag with target keywords.
+Recommendation: Add a meta description that summarizes the page and includes primary keywords.
 Patch:
-```diff
---- a/TradePulse/src/domain/limitOrders/index.ts
-+++ b/TradePulse/src/domain/limitOrders/index.ts
-@@ -1,3 +1,8 @@
-+/**
-+ * Limit Orders Domain - Engine, Matching, and Order Book Management
-+ * @module LimitOrders
-+ */
+-export { PortfolioPanel } from './PortfolioPanel';
++`.
+-export {
 +
- export { LimitOrderEngine } from './limitOrderEngine';
- export type { PlaceLimitOrderInput } from './limitOrderEngine';
- export {
-```
+-  computeLivePortfolioMetrics,
++Let's double check if there's any other file or if this is indeed what's expected.
+-  formatCoinAtoms,
++Yes, adding a `
+-  formatUsdFromCents,
+-} from './portfolioMetrics';
+-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
+-
