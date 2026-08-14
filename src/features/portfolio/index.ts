@@ -1,3 +1,7 @@
+/**
+ * TradePulse Portfolio Feature - Live Portfolio Metrics and Panels
+ */
+
 export { PortfolioPanel } from './PortfolioPanel';
 export {
   computeLivePortfolioMetrics,
