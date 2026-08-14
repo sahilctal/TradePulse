@@ -1,6 +1,6 @@
-/**
- * Portfolio feature providing metrics calculation and UI components for tracking asset performance.
- */
-export { PortfolioPanel } from './PortfolioPanel';
+export { PortfolioPanel, PortfolioHeader } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
+  formatCoinAtoms,
 export {
   computeLivePortfolioMetrics,
