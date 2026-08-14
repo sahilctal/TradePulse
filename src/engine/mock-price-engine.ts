@@ -1,0 +1,1 @@
+An elegant way to improve performance and avoid blocking the main thread (which directly impacts Core Web Vitals like Interaction to Next Paint and Total Blocking Time) is to
