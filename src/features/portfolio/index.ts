@@ -1,4 +1,4 @@
-export { PortfolioPanel, PortfolioHeader } from './PortfolioPanel';
+export { PortfolioPanel } from './PortfolioPanel';
 export {
   computeLivePortfolioMetrics,
   formatCoinAtoms,
