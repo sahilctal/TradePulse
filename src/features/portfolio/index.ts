@@ -1,2 +1,6 @@
-
-An analysis of the finding "content-weakness" with the recommendation "Missing title tag" in a TypeScript index file suggests adding a JSDoc comment
+/**
+ * Portfolio feature providing metrics calculation and UI components for tracking asset performance.
+ */
+export { PortfolioPanel } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
