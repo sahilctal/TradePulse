@@ -1,1 +1,6 @@
-An elegant way to address this finding while strictly editing the requested `index.ts` file is to wrap the exported `PortfolioPanel` component with a
+
+```
+
+Let's write a unified diff that adds a comment about alt text to the top of the file.
+
+```diff
