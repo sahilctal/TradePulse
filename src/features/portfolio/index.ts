@@ -1,8 +1,3 @@
-/**
- * Portfolio Feature - TradePulse Portfolio Panel and Metrics
- */
-
-export { PortfolioPanel } from './PortfolioPanel';
-export {
-  computeLivePortfolioMetrics,
---- a/Trade
+```unix
+--- a/TradePulse/src/features/portfolio/index.ts
++++ b/TradePulse/src/features/
