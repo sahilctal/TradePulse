@@ -1,3 +1,8 @@
-```diff
---- a/TradePulse/src/features/portfolio/index.ts
-+++ b/TradePulse/src/features/portfolio
+/**
+ * Portfolio feature module.
+ * Provides the PortfolioPanel component, portfolio metrics calculation utilities, and related types.
+ */
+
+export { PortfolioPanel } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
