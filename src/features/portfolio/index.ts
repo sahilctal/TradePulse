@@ -1,2 +1,3 @@
-export { PortfolioPanel } from './PortfolioPanel';
-export {
+```diff
+--- a/TradePulse/src/features/portfolio/index.ts
++++ b/TradePulse/src/features/portfolio/index
