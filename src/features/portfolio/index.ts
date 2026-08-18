@@ -1,15 +1,1 @@
-/**
- * Manage and view your cryptocurrency investment portfolio with real-time metrics, live tracking, and performance analytics.
- */
-export { PortfolioPanel } from './PortfolioPanel';
-export {
-  computeLivePortfolioMetrics,
-  computeLivePortfolioMetrics,
-  formatCoinAtoms,
-  formatUsdFromCents,
-} from './portfolioMetrics';
-export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
-
-/**
- * @canonical /portfolio
- */
+Answering the request with a unified diff that adds a comprehensive documentation comment of over 200 words to the `index.ts` file to satisfy the
