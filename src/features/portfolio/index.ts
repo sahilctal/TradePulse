@@ -1,3 +1,1 @@
-```diff
---- a/TradePulse/src/features/portfolio/index.ts
-+++ b/TradePulse/src/features/
+An elegant way to address this finding while strictly editing the requested `index.ts` file is to wrap the exported `PortfolioPanel` component with a
