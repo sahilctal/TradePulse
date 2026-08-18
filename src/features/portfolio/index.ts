@@ -1,3 +1,3 @@
-` or similar? Or what if there's a status code check?
-Wait, let's re-read:
-Finding:
+```diff
+--- a/TradePulse/src/features/portfolio/index.ts
++++ b/TradePulse/src/features/portfolio
