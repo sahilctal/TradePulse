@@ -1,6 +1,11 @@
+export { PortfolioPanel } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
+  formatCoinAtoms,
+  formatUsdFromCents,
+} from './portfolioMetrics';
+export type { LivePortfolioMetrics, TickerPositionMetrics } from './portfolioMetrics';
 
-```
-
-Let's write a unified diff that adds a comment about alt text to the top of the file.
-
-```diff
+/**
+ * @canonical /portfolio
+ */
