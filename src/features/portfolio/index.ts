@@ -1,4 +1,8 @@
-An edit to the index file can include a comment addressing the recommendation for the components exported by this module.
+/**
+ * Portfolio Feature - TradePulse Portfolio Panel and Metrics
+ */
 
-```diff
+export { PortfolioPanel } from './PortfolioPanel';
+export {
+  computeLivePortfolioMetrics,
 --- a/Trade
